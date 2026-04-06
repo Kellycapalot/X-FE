@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X Clone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- LEFT -->
+  <div class="left">
+    <h1>𝕏</h1>
+  </div>
+
+  <!-- RIGHT LOGIN -->
+  <div class="right">
+    <div class="content">
+      <h2>Sign in to X</h2>
+
+      <input type="text" placeholder="Phone, email, or username">
+      <button class="btn primary">Next</button>
+
+      <button class="btn outline">Forgot password?</button>
+
+      <p class="switch">
+        Don’t have an account?
+        <a href="#" onclick="openModal()">Sign up</a>
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<!-- SIGNUP MODAL -->
+<div id="modal" class="modal hidden">
+  <div class="modal-box">
+
+    <span class="close" onclick="closeModal()">×</span>
+
+    <h2>Create your account</h2>
+
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+
+    <button class="btn primary">Sign up</button>
+
+    <p class="switch">
+      Already have an account?
+      <a href="#" onclick="closeModal()">Sign in</a>
+    </p>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
